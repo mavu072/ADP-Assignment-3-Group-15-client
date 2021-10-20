@@ -8,6 +8,9 @@ import java.awt.event.ActionListener;
 public class ComputerLabView implements ActionListener {
     private JFrame frame;
 
+    // Dimension
+    Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+
     // JPanel
     private JPanel pnlCenter, pnlNorth, pnlSouth, pnlEast, pnlWest;
 
@@ -76,6 +79,7 @@ public class ComputerLabView implements ActionListener {
 
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.pack();
+        frame.setSize(screenSize.width, screenSize.height);
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
 
@@ -84,9 +88,13 @@ public class ComputerLabView implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
 
-        if(e.getActionCommand().equals("Clos")){
+        if(e.getActionCommand().equals("Close")){
             frame.dispose();
         }
+    }
+
+    public static void main(String[] args) {
+        new ComputerLabView();
     }
 
 }
