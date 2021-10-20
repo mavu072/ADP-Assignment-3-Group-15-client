@@ -7,6 +7,7 @@ To see the Server application, see [https://github.com/mavu072/ADP-Assignment-3-
 ### How to use app:
 
 Computer Preconditions (before running the app):
+
 1.) IntelliJ with mysql 0.4.0 extension enabled
 
 2.) Java dev. kit extension
