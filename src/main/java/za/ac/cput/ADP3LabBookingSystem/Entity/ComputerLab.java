@@ -6,16 +6,9 @@
 * */
 package za.ac.cput.ADP3LabBookingSystem.Entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-@Entity
-@Table(name = "ComputerLab")
 public class ComputerLab {
 
     //private variables
-    @Id
     private String labId;
     private String buildingId;
     private int capacity;
