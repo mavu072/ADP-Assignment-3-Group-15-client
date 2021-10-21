@@ -1,6 +1,9 @@
 package za.ac.cput.ADP3LabBookingSystem.View;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -30,15 +33,15 @@ public class App {
             return response.body().toString();
         }
     }
-
+    /*
     public static void getAll() {
         final String URL = "http://localhost:8090/computerlab/getall";
         try {
             String responseBody = run(URL);
-            JSONArray computerLabs = new JSONArray(responseBody);
+            JsonArray computerLabs = new JsonArray(responseBody);
 
             for (int i = 0; i < computerLabs.length(); i++) {
-                JSONObject computerLab = computerLabs.getJSONObject(i);
+                JsonObject computerLab = computerLabs.getJSONObject(i);
 
                 Gson g = new Gson();
                 ComputerLab c =g.fromJson(computerLab.toString(), ComputerLab.class);
@@ -50,6 +53,7 @@ public class App {
         }
     }
 
+    */
 
     /************************************************** GUI CODE ****************************************************/
     //                                                              //
@@ -1234,10 +1238,11 @@ public class App {
     /***************************************************************************************************************************************************/
 
     public static void main(String[] args) {
+        //getAll();
 
-        getAll();
-
-        /* IF THIS IS THE FIRST EXEC. THEN UNCOMMENT AND RUN THE FOLLOWING */
+        
+        
+        /****** IF THIS IS THE FIRST EXECUTION. THEN UNCOMMENT AND RUN THE FOLLOWING *******/
 
         //JOptionPane.showMessageDialog(null, "Creating DB Tables and Data. \n Wait until welcome screen.");
         //Booking.createTables();
