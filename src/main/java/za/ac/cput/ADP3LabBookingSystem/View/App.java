@@ -5,6 +5,7 @@ import okhttp3.*;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+import za.ac.cput.ADP3LabBookingSystem.Entity.Booking;
 import za.ac.cput.ADP3LabBookingSystem.Entity.ComputerLab;
 
 import javax.swing.*;
@@ -1206,14 +1207,14 @@ public class App {
 
         /* IF THIS IS THE FIRST EXEC. THEN UNCOMMENT AND RUN THE FOLLOWING */
 
-        //JOptionPane.showMessageDialog(null, "Creating DB Tables and Data. \n Wait until welcome screen.");
-        //Booking.createTables();
-        //Booking.insertIntoStudentTab();
-        //Booking.insertIntoAddressTab();
-        //Booking.insertIntoBuildingTab();
-        //Booking.insertIntoCompLabTab();
-        //Booking.insertIntoSeatTab();
-        //Booking.insertIntoBookingTab();
+        JOptionPane.showMessageDialog(null, "Creating DB Tables and Data. \n Wait until welcome screen.");
+        Booking.createTables();
+        Booking.insertIntoStudentTab();
+        Booking.insertIntoAddressTab();
+        Booking.insertIntoBuildingTab();
+        Booking.insertIntoCompLabTab();
+        Booking.insertIntoSeatTab();
+        Booking.insertIntoBookingTab();
 
         createAppPreconditionGUI();
     }
