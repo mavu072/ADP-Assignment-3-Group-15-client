@@ -1,7 +1,16 @@
 package za.ac.cput.ADP3LabBookingSystem.View;
 
 import com.google.gson.Gson;
+<<<<<<< HEAD
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
+=======
 import okhttp3.*;
+>>>>>>> 56ea7ab375e7309e9841cb5cd3e5b9fc8fb37ab4
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -20,6 +29,42 @@ import java.util.Map;
 
 public class App {
 
+<<<<<<< HEAD
+    private static OkHttpClient client = new OkHttpClient();
+
+    private static String run(String url) throws IOException {
+        Request request = new Request.Builder()
+                .url(url)
+                .build();
+
+        try (Response response = client.newCall(request).execute()) {
+            return response.body().toString();
+        }
+    }
+    /*
+    public static void getAll() {
+        final String URL = "http://localhost:8090/computerlab/getall";
+        try {
+            String responseBody = run(URL);
+            JsonArray computerLabs = new JsonArray(responseBody);
+
+            for (int i = 0; i < computerLabs.length(); i++) {
+                JsonObject computerLab = computerLabs.getJSONObject(i);
+
+                Gson g = new Gson();
+                ComputerLab c =g.fromJson(computerLab.toString(), ComputerLab.class);
+                System.out.println(c.toString());
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    */
+
+=======
+>>>>>>> 56ea7ab375e7309e9841cb5cd3e5b9fc8fb37ab4
     /************************************************** GUI CODE ****************************************************/
     //                                                              //
     //  Code is really long - better to just run the main.java source//
@@ -1203,8 +1248,15 @@ public class App {
     /***************************************************************************************************************************************************/
 
     public static void main(String[] args) {
+        //getAll();
 
+<<<<<<< HEAD
+        
+        
+        /****** IF THIS IS THE FIRST EXECUTION. THEN UNCOMMENT AND RUN THE FOLLOWING *******/
+=======
         /* IF THIS IS THE FIRST EXEC. THEN UNCOMMENT AND RUN THE FOLLOWING */
+>>>>>>> 56ea7ab375e7309e9841cb5cd3e5b9fc8fb37ab4
 
         //JOptionPane.showMessageDialog(null, "Creating DB Tables and Data. \n Wait until welcome screen.");
         //Booking.createTables();
