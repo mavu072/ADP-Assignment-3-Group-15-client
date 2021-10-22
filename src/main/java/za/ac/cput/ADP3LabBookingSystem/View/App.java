@@ -1,16 +1,16 @@
 package za.ac.cput.ADP3LabBookingSystem.View;
 
 import com.google.gson.Gson;
-<<<<<<< HEAD
+//<<<<<<< HEAD
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
-=======
+//=======
 import okhttp3.*;
->>>>>>> 56ea7ab375e7309e9841cb5cd3e5b9fc8fb37ab4
+//>>>>>>> 56ea7ab375e7309e9841cb5cd3e5b9fc8fb37ab4
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -30,7 +30,7 @@ import java.util.Map;
 
 public class App {
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
     private static OkHttpClient client = new OkHttpClient();
 
     private static String run(String url) throws IOException {
@@ -64,8 +64,8 @@ public class App {
 
     */
 
-=======
->>>>>>> 56ea7ab375e7309e9841cb5cd3e5b9fc8fb37ab4
+//=======
+//>>>>>>> 56ea7ab375e7309e9841cb5cd3e5b9fc8fb37ab4
     /************************************************** GUI CODE ****************************************************/
     //                                                              //
     //  Code is really long - better to just run the main.java source//
@@ -1251,22 +1251,22 @@ public class App {
     public static void main(String[] args) {
         //getAll();
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
         
         
         /****** IF THIS IS THE FIRST EXECUTION. THEN UNCOMMENT AND RUN THE FOLLOWING *******/
-=======
+//=======
         /* IF THIS IS THE FIRST EXEC. THEN UNCOMMENT AND RUN THE FOLLOWING */
->>>>>>> 56ea7ab375e7309e9841cb5cd3e5b9fc8fb37ab4
+//>>>>>>> 56ea7ab375e7309e9841cb5cd3e5b9fc8fb37ab4
 
-        JOptionPane.showMessageDialog(null, "Creating DB Tables and Data. \n Wait until welcome screen.");
-        Booking.createTables();
-        Booking.insertIntoStudentTab();
-        Booking.insertIntoAddressTab();
-        Booking.insertIntoBuildingTab();
-        Booking.insertIntoCompLabTab();
-        Booking.insertIntoSeatTab();
-        Booking.insertIntoBookingTab();
+//        JOptionPane.showMessageDialog(null, "Creating DB Tables and Data. \n Wait until welcome screen.");
+//        Booking.createTables();
+//        Booking.insertIntoStudentTab();
+//        Booking.insertIntoAddressTab();
+//        Booking.insertIntoBuildingTab();
+//        Booking.insertIntoCompLabTab();
+//        Booking.insertIntoSeatTab();
+//        Booking.insertIntoBookingTab();
 
         createAppPreconditionGUI();
     }
